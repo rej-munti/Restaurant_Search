@@ -1,38 +1,134 @@
-.App {
+html, body, #root {
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image:url('img/main_background.jpg');
+  position:fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MainContainer {
+   width:100%;
+   height: 100%;
+   align-items: center;
+   background: rgba(192,192,192,0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.logo img {
+  padding-top: 5em;
+  margin-bottom: 40px;
+ align-items: center;
+ margin-right: auto;
+ margin-left: auto;
+}
+
+.but button, #another_sug button {
+  width:60%;
+}
+
+ button, input[type=submit] {
+   position: relative;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #0b9496;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family:"Gill Sans", sans-serif;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 45%;
+    margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+p, span {
+    margin-top: 100px;
+    color:  #0b9496;
+    font-family:"Gill Sans", sans-serif;
+    font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/*--------Suggetion Page--------*/
+
+.header {
+  background: #0b9496;
+  height: 10%;
+  width: 100%;
+}
+
+#logo_header {
+cursor: pointer;
+float: right;
+position: relative;
+margin:15px;
+}
+
+#restaurant_baner {
+background:rgba(255,255,255, 0.9);
+color:#0b9496;
+position:relative;
+display:block;
+text-align:center;
+margin-right: auto;
+margin-left: auto;
+font-size:15pt;
+padding: 30px;
+width: auto;
+height: auto;
+}
+
+#another_sug button {
+  margin-top: 50%;
+  display: block;
+}
+#google button {
+  background-color:rgba(192,192,192,0.2);
+  color:#0b9496;
+}
+
+/*--------MakeAccount Page--------*/
+
+.MainContainer form {
+  color: #0b9496;
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.MainContainer input[type=text] {
+  text-align: right;
+  width: 45%;
+  padding: 12px 20px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------App section--------*/
+
+#map {
+  max-width:50%;
+  height: 50%;
+}
+
+.Info {
+  margin-top: 10%;
+}
+
+@media only screen and (min-width:600px) {
+  .MainContainer {
+    width:600px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
